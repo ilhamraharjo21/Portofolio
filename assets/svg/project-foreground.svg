@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 910">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="562" x2="1920" y2="562" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8f8f8"/>
+      <stop offset="0" stop-color="#f8f8f8" stop-opacity=".95"/>
+      <stop offset="0" stop-color="#f8f8f8" stop-opacity=".76"/>
+      <stop offset=".02" stop-color="#f8f8f8" stop-opacity=".58"/>
+      <stop offset=".02" stop-color="#f8f8f8" stop-opacity=".42"/>
+      <stop offset=".03" stop-color="#f8f8f8" stop-opacity=".29"/>
+      <stop offset=".04" stop-color="#f8f8f8" stop-opacity=".18"/>
+      <stop offset=".05" stop-color="#f8f8f8" stop-opacity=".1"/>
+      <stop offset=".06" stop-color="#f8f8f8" stop-opacity=".04"/>
+      <stop offset=".08" stop-color="#f8f8f8" stop-opacity=".01"/>
+      <stop offset=".1" stop-color="#f8f8f8" stop-opacity="0"/>
+      <stop offset=".9" stop-color="#f8f8f8" stop-opacity="0"/>
+      <stop offset=".92" stop-color="#f8f8f8" stop-opacity=".01"/>
+      <stop offset=".94" stop-color="#f8f8f8" stop-opacity=".04"/>
+      <stop offset=".95" stop-color="#f8f8f8" stop-opacity=".1"/>
+      <stop offset=".96" stop-color="#f8f8f8" stop-opacity=".18"/>
+      <stop offset=".97" stop-color="#f8f8f8" stop-opacity=".29"/>
+      <stop offset=".98" stop-color="#f8f8f8" stop-opacity=".42"/>
+      <stop offset=".99" stop-color="#f8f8f8" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity=".87"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-1" y="264" width="1920" height="596"/>
+</svg>

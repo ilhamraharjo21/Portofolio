@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ad0000;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #ad0000;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-family: Zain-ExtraBold, Zain;
+        font-size: 48.92px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <g>
+      <path class="cls-1" d="M673.93,424.2H26.07c-11.07,0-20.07-9-20.07-20.07V25.87C6,14.8,15,5.8,26.07,5.8h647.85c11.07,0,20.07,9,20.07,20.07v378.26c0,11.07-9,20.07-20.07,20.07ZM26.07,10.35c-8.56,0-15.52,6.96-15.52,15.52v378.26c0,8.56,6.96,15.52,15.52,15.52h647.85c8.55,0,15.52-6.96,15.52-15.52V25.87c0-8.55-6.96-15.52-15.52-15.52H26.07Z"/>
+      <path class="cls-2" d="M675.87,4.65H24.13c-18.05,0-18.13.66-18.13,56.78v13.51h688v-13.51c0-56.12-.08-56.78-18.13-56.78Z"/>
+      <g>
+        <path class="cls-3" d="M56.64,35c0,7.73-6.27,14-14,14s-14-6.27-14-14,6.27-14,14-14,14,6.27,14,14Z"/>
+        <path class="cls-3" d="M95.18,35c0,7.73-6.27,14-14,14s-14-6.27-14-14,6.27-14,14-14,14,6.27,14,14Z"/>
+        <path class="cls-3" d="M133.72,35c0,7.73-6.27,14-14,14s-14-6.27-14-14,6.27-14,14-14,14,6.27,14,14Z"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_3">
+    <text class="cls-4" transform="translate(276.91 48.97)"><tspan class="cls-5" x="0" y="0">S</tspan><tspan x="22.6" y="0">ail App</tspan></text>
+  </g>
+</svg>

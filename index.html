@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/svg/logo-icon.svg" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <span class="menu-container" data-svg="assets/svg/animation-home-icon.svg">
+              <a href="#home" class="menu-icon" aria-label="Home">
+                <span class="menu-text">Home</span>
+                <span class="svg-placeholder"></span>
+              </a>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="menu-container" data-svg="assets/svg/animation-aboutme-icon.svg">
+              <a href="#about" class="menu-icon" aria-label="About Me">
+                <span class="menu-text">About Me</span>
+                <span class="svg-placeholder"></span>
+              </a>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="menu-container" data-svg="assets/svg/animation-project-icon.svg">
+              <a href="#projects" class="menu-icon" aria-label="Projects">
+                <span class="menu-text">Projects</span>
+                <span class="svg-placeholder"></span>
+              </a>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="menu-container" data-svg="assets/svg/animation-contact-icon.svg">
+              <a href="#contact" class="menu-icon" aria-label="Contact">
+                <span class="menu-text">Contact</span>
+                <span class="svg-placeholder"></span>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="svg-background">
+        <object id="homeBackground" type="image/svg+xml"></object>
+      </div>
+    </section>
+
+    <section id="about">
+      <a href="#projects" class="about-button">Go to Projects</a>
+      <div class="svg-foreground">
+        <object data="assets/svg/animation-aboutme-foreground.svg" type="image/svg+xml"></object>
+      </div>
+      <div class="svg-background">
+        <object data="assets/svg/animation-aboutme-background.svg" type="image/svg+xml"></object>
+      </div>
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello, I’m Ilham Budi Raharjo, a Motion Graphic Designer with over 5 years of experience in graphic design and animation. I specialize in creating engaging video content and animations that deliver a strong visual impact. My skills include video editing, animation, visual effects, and content creation for various platforms.
+
+            I have had the opportunity to work with a wide range of clients, from large corporations to personal projects, creating work that is not only visually appealing but also effective in communicating the intended message. My experience spans across various types of projects, including web design, commercial videos, event openings, video game trailers and video mapping.
+        
+            As someone who is always eager to learn and grow, I continually explore new trends and techniques in graphic design and animation.
+            
+            If you're interested in collaborating or would like to learn more about my work, feel free to reach out through the contact page.</p>
+        </div>
+        <div class="about-photo">
+          <img src="assets/images/about-me.png" alt="My Photo" class="about-photo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="svg-background">
+        <object data="assets/svg/animation-project-background.svg" type="image/svg+xml"></object>
+      </div>
+      <h2>Projects</h2>
+      <p> "Miracles only happen to those who never stop trying"</p>
+
+      <div class="project-wrapper">
+        <!-- Card 1 - YouTube Video -->
+        <div class="project-card">
+          <div class="card-content">
+            <iframe width="720" height="450" src="https://www.youtube.com/embed/u_X6K8DH9a0?si=fw3wdGfcA1XRacj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <img src="assets/svg/card-realm protector.svg" alt="frame" class="card-frame">
+        </div>       
+    
+        <!-- Card 2 - SailApp -->
+        <div class="project-card" id="toggleCard">
+          <div class="card-content" id="svgWrapper">
+            <object data="assets/svg/sailapp-banner.svg" type="image/svg+xml" class="svg-object"></object>
+          </div>
+          <img src="assets/svg/card-sailapp.svg" alt="frame" class="card-frame">
+        </div>
+    
+        <!-- Card 3 - Digital Identity -->
+        <div class="project-card">
+          <div class="card-content">
+            <object data="assets/svg/digital identity.svg" type="image/svg+xml" class="svg-object"></object>
+          </div>
+          <img src="assets/svg/card-digital identiy.svg" alt="frame" class="card-frame">
+        </div>
+
+        <!-- Card 4 - YouTube Video -->
+        <div class="project-card">
+          <div class="card-content">
+            <iframe width="720" height="450" src="https://www.youtube.com/embed/p1-o8hLtGc8?si=rZ_kMjGUZ5JnL8R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <img src="assets/svg/card-pubg.svg" alt="frame" class="card-frame">
+        </div>       
+        
+        <!-- Card 5 - YouTube Video -->
+        <div class="project-card">
+          <div class="card-content">
+            <iframe width="720" height="450" src="https://www.youtube.com/embed/qI9PNBiOKr8?si=pP0UF-AGhKMCumD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+          <img src="assets/svg/Card-oto.svg" alt="frame" class="card-frame">
+        </div>       
+        
+        <!-- (Kamu bisa tambah card lagi dengan format serupa) -->
+    
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="svg-background">
+        <object data="assets/svg/contact-background.svg" type="image/svg+xml"></object>
+      </div>
+      <h2>Thank you</h2>
+      <p>Interested in collaborating or discussing creative ideas? Send me an email, I'd love to hear from you! <br> Email : ilhambudiraharjo@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ilham Budi Raharjo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

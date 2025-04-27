@@ -1,0 +1,418 @@
+/* General Reset */
+body {
+    font-family: 'Zain', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #0F0F0F;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1em 2em;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header Container */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    height: 40px;
+}
+
+/* Navigation Styling */
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Item */
+.nav-item {
+    position: relative;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-text,
+.menu-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    transition: opacity 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.menu-icon a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.nav-item:hover .menu-text {
+    opacity: 0;
+}
+
+.nav-item:hover .menu-icon {
+    opacity: 1;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    overflow: hidden;
+    padding: 0em 2em;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.svg-background object {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content inside home */
+#home .content {
+    position: relative;
+    z-index: 1;
+}
+
+#about {
+    background-color: #0f0f0f; /* Warna background */
+    color: #ffffff;            /* Warna teks */
+    margin-top: -11px;          /* Supaya naik mendekati header */
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 1em 8em;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 21px;
+    line-height: 1.6;
+    max-width: 760px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 9em;
+    flex-wrap: nowrap; /* Tetap sejajar */
+    justify-content: left;
+  }
+  
+  .about-text {
+    max-width: 900px;
+  }
+  
+  .about-photo {
+    position: relative;
+    width: 277px;
+    height: 377px;
+    overflow: hidden; /* Biar shadow nggak keluar */
+    border-radius: 0;
+    transform: translateY(-26px); /* Geser turun 20px */
+  }
+  
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .about-photo::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0));
+    pointer-events: none;
+  }
+  
+  .svg-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3; /* Lebih tinggi dari foto dan teks */
+    pointer-events: none; /* Biar SVG tidak mengganggu klik teks atau foto */
+  }
+  
+  .svg-foreground object {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-button {
+    position: absolute; /* Menempatkan tombol di posisi bebas */
+    top: 82%; /* Menempatkan tombol di tengah secara vertikal */
+    left: 65%; /* Menempatkan tombol di tengah secara horizontal */
+    color: #ffffff; /* Warna teks tombol */
+    font-size: 1px; /* Ukuran font tombol */
+    padding: 10px 30px; /* Padding tombol (atas/bawah, kiri/kanan) */
+    z-index: 4;
+  }
+  
+/* Section Projects */
+#projects {
+  background-color: white;
+  margin-top: -3px;          /* Supaya naik mendekati header */
+  color: #0f0f0f;
+  position: relative;
+  padding: 1em 0em;
+}
+
+#projects h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding: 0em 3.7em;
+}
+
+#projects p {
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ⬅️ Ini buat efek shadow */
+}
+
+/* Wrapper untuk membuat card scroll horizontal */
+.project-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 2em;
+  padding: 2em 0;
+  scroll-behavior: smooth;
+  position: relative;
+  scroll-padding: 4em;
+}
+
+/* Tambahkan ini untuk space kiri-kanan */
+.project-wrapper::before,
+.project-wrapper::after {
+  content: '';
+  flex: 0 0 4em; /* ⬅️ Atur jarak padding kiri dan kanan */
+}
+
+/* Style untuk masing-masing card */
+.project-card {
+  position: relative;
+  flex: 0 0 735px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.4em;
+  text-align: center;
+  scroll-snap-align: start;
+  height: 449px; /* Tentukan tinggi card sesuai kebutuhan */
+  overflow: hidden;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Menyembunyikan bagian yang keluar dari batas card */
+}
+
+.svg-object {
+  width: 98%;
+  height: 98%;
+  object-fit: contain; /* Pastikan SVG menyesuaikan tanpa merusak aspek rasio */
+}
+
+/* Frame */
+.card-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: contain; /* Menyesuaikan frame dengan konten tanpa merusak rasio */
+}
+
+/* Awal keadaan project-card (sembunyi) */
+.project-card {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Saat muncul di layar */
+.project-card.show-card {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Optional: agar scrollbar terlihat kecil */
+.project-wrapper::-webkit-scrollbar {
+  height: 0px;
+}
+
+
+#contact {
+  background-color: #0F0F0F;
+  margin-top: -3px;         
+  color: #ffffff;
+  position: relative;
+  padding: 1em 0em;
+}
+
+#contact h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 10px;
+  padding: 0em 4em;
+}
+
+#contact p {
+  text-align: left;
+  font-size: 21px;
+  margin-bottom: 21px;
+  padding: 0em 7em;
+}
+
+h2, p {
+  position: relative;  /* Agar teks tetap berada di atas background */
+  z-index: 1;  /* Pastikan teks di atas background */
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f5f5f5;
+    color: #0F0F0F;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 0;
+  }
+
+  header nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul {
+    flex-direction: row; /* tetap horizontal */
+    justify-content: center; /* rata tengah */
+    gap: 20px; /* atur jarak antar menu */
+    margin-top: 1em; /* kasih jarak antara logo dan menu */
+    flex-wrap: wrap; /* supaya kalau terlalu banyak menu, otomatis wrap */
+  }
+
+  header nav ul li a {
+    font-size: 18px; /* font lebih kecil sedikit di mobile */
+  }
+
+  .logo {
+    height: 40px; /* Logo tetap proporsional */
+    margin-bottom: 0.5em;
+  }
+
+  /* Home Section */
+  #home {
+    padding: 1em;
+    padding-top: 0; /* Buat padding atas kecil atau 0 */
+    margin-top: 0; /* Pastikan tidak ada jarak */
+    min-height: 0;
+    padding: 5.6em
+  }
+
+  #home .content h1 {
+    font-size: 32px;
+  }
+
+  .about-container {
+    flex-direction: row; /* Tetap sejajar kiri-kanan */
+    align-items: center;
+    justify-content: center; /* Tengah di layar */
+    gap: 2em;
+    text-align: left; /* Text tetap rata kiri */
+    max-width: 5%
+  }
+  
+  /* Project Section */
+  .project-wrapper {
+    scroll-padding: 2em;
+  }
+
+  .project-card {
+    flex: 0 0 85%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Contact Section */
+  #contact p {
+    font-size: 18px;
+    padding: 0 1em;
+    text-align: center;
+  }
+
+  #contact h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
