@@ -334,7 +334,55 @@ footer {
   color: #0F0F0F;
 }
 
+.section-filler {
+  width: 100%;
+  height: 0px; /* default desktop: tidak terlihat */
+  background-color: #0f0f0f; /* warna sama dengan section berikutnya (about) */
+  z-index: 2;
+  position: relative;
+}
+
+
+@media (max-width: 1200px), (min-width: 1600px) {
+  .section-filler {
+    height: 80px; /* atau berapa pun sesuai kebutuhanmu */
+  }
+}
+
 @media (max-width: 1024px) {
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* beri jarak antara logo dan navbar */
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul {
+    flex-direction: row; /* tetap horizontal */
+    justify-content: center;
+    flex-wrap: wrap; /* supaya menu tidak terpotong jika banyak */
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul li {
+    list-style: none;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
+
+  .logo {
+    margin-bottom: 0.5em;
+  }
 
   #about h2 {
     font-size: 20px;
@@ -395,6 +443,26 @@ footer {
 
   #projects p {
     font-size: 17px;
+  }
 
+  #contact h2 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0em 1.5em;
+    }
+    
+    #contact p {
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 21px;
+    padding: 0em 2em;
+    }
+}
+
+@media (max-width: 768px) {
+  .section-filler {
+    height: 50px; /* atau 150px, tergantung rasio kosong di layar kamu */
+    margin-top: -560px;
   }
 }
