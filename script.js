@@ -157,3 +157,24 @@ const observer = new IntersectionObserver(entries => {
 projectCards.forEach(card => {
   observer.observe(card);
 });
+
+function switchSVGforMobile() {
+  const isMobile = window.innerWidth <= 1024;
+
+  const fg = document.getElementById("foregroundSVG");
+  const bg = document.getElementById("backgroundSVG");
+
+  if (fg && bg) {
+    fg.setAttribute("data", isMobile 
+      ? "assets/svg/mobile-aboutme-foreground.svg" 
+      : "assets/svg/animation-aboutme-foreground.svg");
+
+    bg.setAttribute("data", isMobile 
+      ? "assets/svg/mobile-aboutme-background.svg" 
+      : "assets/svg/animation-aboutme-background.svg");
+  }
+}
+
+// Panggil saat halaman load dan saat resize
+window.addEventListener("load", switchSVGforMobile);
+window.addEventListener("resize", switchSVGforMobile);
