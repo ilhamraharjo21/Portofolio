@@ -270,7 +270,7 @@ transform: scale(1);
 
 /* Optional: agar scrollbar terlihat kecil */
 .project-wrapper::-webkit-scrollbar {
-height: 0px;
+height: 1px;
 }
 
 
