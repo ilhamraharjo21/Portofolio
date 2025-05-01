@@ -270,8 +270,22 @@ transform: scale(1);
 
 /* Optional: agar scrollbar terlihat kecil */
 .project-wrapper::-webkit-scrollbar {
-height: 1px;
+height: 8px;
 }
+
+.project-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.project-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.project-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 
 #contact {
@@ -350,4 +364,3 @@ footer {
     height: auto;
   }
 }
-
